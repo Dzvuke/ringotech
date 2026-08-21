@@ -1,0 +1,2117 @@
+/* =========================================================
+   RINGO SOLAR
+   SOLAR SYSTEMS & INVERTER REPAIR
+========================================================= */
+
+
+/* =========================================================
+   BASIC SETTINGS
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #f5f7fa;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.7;
+}
+
+a {
+    transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar {
+    width: 100%;
+    background: #08131f;
+    padding: 18px 20px;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.brand {
+    color: white;
+    text-decoration: none;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.navigation {
+    display: flex;
+    gap: 30px;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navigation a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    padding: 8px 5px;
+}
+
+.navigation a:hover {
+    color: #ffc107;
+}
+
+.navigation a.active {
+    color: #ffc107;
+}
+
+
+/* =========================================================
+   HOME
+========================================================= */
+
+.home {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.58),
+            rgba(0, 0, 0, 0.58)
+        ),
+        url("images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   HOME LOGO
+========================================================= */
+
+.home-logo {
+    width: 400px;
+    max-width: 80%;
+    height: auto;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   HOME TEXT
+========================================================= */
+
+.home h1 {
+    color: white;
+
+    font-size: 52px;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.home h2 {
+    color: #ffc107;
+
+    font-size: 30px;
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+.home p {
+    color: white;
+
+    font-size: 20px;
+
+    max-width: 750px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================================
+   PAGE HERO
+========================================================= */
+
+.page-hero {
+    min-height: 350px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.page-hero-content {
+    max-width: 800px;
+}
+
+.page-hero-content h1 {
+    color: white;
+
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.page-hero-content p {
+    color: white;
+
+    font-size: 18px;
+
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   ABOUT HERO
+========================================================= */
+
+.about-hero {
+    min-height: 430px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.68),
+            rgba(0, 0, 0, 0.68)
+        ),
+        url("images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.about-hero-content {
+    max-width: 850px;
+}
+
+.about-location {
+    color: #ffc107;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+.about-hero h1 {
+    color: white;
+
+    font-size: 58px;
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+.about-hero h2 {
+    color: #ffc107;
+
+    font-size: 28px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.about-hero-content > p:last-child {
+    color: #e5e7eb;
+
+    font-size: 18px;
+
+    max-width: 760px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   ABOUT INTRODUCTION
+========================================================= */
+
+.about-introduction {
+    background: white;
+
+    padding: 90px 0;
+
+    border-bottom: 1px solid #e1e5ea;
+}
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.4fr;
+
+    gap: 80px;
+
+    align-items: start;
+}
+
+.about-heading {
+    position: relative;
+}
+
+.section-label {
+    color: #d99a00;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+
+    text-transform: uppercase;
+}
+
+.about-heading h2 {
+    color: #111827;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+.about-text {
+    max-width: 700px;
+}
+
+.about-text p {
+    color: #64748b;
+
+    font-size: 17px;
+
+    margin-bottom: 22px;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   ABOUT SERVICES
+========================================================= */
+
+.about-services {
+    background: #f5f7fa;
+
+    padding: 90px 0;
+}
+
+.about-section-heading {
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 0 auto 55px;
+}
+
+.about-section-heading h2 {
+    color: #111827;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.about-section-heading > p:last-child {
+    color: #64748b;
+
+    font-size: 17px;
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   ABOUT CARDS
+========================================================= */
+
+.about-cards {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.about-card {
+    background: white;
+
+    padding: 35px;
+
+    border: 1px solid #e1e5ea;
+
+    border-radius: 10px;
+
+    position: relative;
+
+    transition: 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #ffc107;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.about-card-number {
+    color: #d99a00;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 18px;
+}
+
+.about-card h3 {
+    color: #111827;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    color: #64748b;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   OUR APPROACH
+========================================================= */
+
+.our-approach {
+    background: white;
+
+    padding: 90px 0;
+
+    border-top: 1px solid #e1e5ea;
+    border-bottom: 1px solid #e1e5ea;
+}
+
+.approach-grid {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.4fr;
+
+    gap: 80px;
+
+    align-items: start;
+}
+
+.our-approach h2 {
+    color: #111827;
+
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.approach-text {
+    max-width: 700px;
+}
+
+.approach-text p {
+    color: #64748b;
+
+    font-size: 17px;
+
+    margin-bottom: 22px;
+}
+
+.approach-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   TECHNICAL AREAS
+========================================================= */
+
+.technical-areas {
+    background: #f5f7fa;
+
+    padding: 90px 0;
+}
+
+.technical-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 0;
+}
+
+.technical-list > div {
+    display: grid;
+
+    grid-template-columns: 55px 1fr;
+
+    column-gap: 20px;
+
+    padding: 30px 25px;
+
+    border-bottom: 1px solid #d9dee5;
+}
+
+.technical-list > div:nth-child(odd) {
+    border-right: 1px solid #d9dee5;
+}
+
+.technical-list span {
+    grid-row: span 2;
+
+    color: #d99a00;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.technical-list strong {
+    color: #111827;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    margin-bottom: 6px;
+}
+
+.technical-list p {
+    color: #64748b;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   OUR GOAL
+========================================================= */
+
+.our-goal {
+    text-align: center;
+
+    background: #fff8df;
+
+    padding: 90px 20px;
+}
+
+.our-goal h2 {
+    color: #111827;
+
+    font-size: 44px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.our-goal > p:last-child {
+    color: #64748b;
+
+    font-size: 18px;
+
+    max-width: 800px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   ABOUT CTA
+========================================================= */
+
+.about-cta {
+    text-align: center;
+
+    background: #08131f;
+
+    color: white;
+
+    padding: 90px 20px;
+}
+
+.about-cta h2 {
+    color: white;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.about-cta p {
+    color: #e5e7eb;
+
+    font-size: 17px;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+}
+
+.about-cta a {
+    display: inline-block;
+
+    background: #ffc107;
+
+    color: #111827;
+
+    text-decoration: none;
+
+    padding: 14px 30px;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.about-cta a:hover {
+    background: #ffca2c;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   SERVICES PAGE
+========================================================= */
+
+.services-page {
+    background: #f5f7fa;
+
+    padding: 60px 20px;
+}
+
+
+/* =========================================================
+   SERVICE SECTION
+========================================================= */
+
+.service-section {
+    display: grid;
+
+    grid-template-columns: 80px 1fr;
+
+    gap: 30px;
+
+    padding: 60px 0;
+
+    border-bottom: 1px solid #d9dee5;
+}
+
+.service-icon {
+    font-size: 40px;
+
+    padding-top: 5px;
+}
+
+.service-content {
+    max-width: 850px;
+}
+
+.service-content h2 {
+    color: #111827;
+
+    font-size: 38px;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.service-content p {
+    color: #64748b;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   SERVICE BULLETS
+========================================================= */
+
+.service-content ul {
+    display: block;
+
+    list-style-type: disc;
+
+    padding-left: 30px;
+
+    margin: 0;
+}
+
+.service-content li {
+    display: list-item;
+
+    list-style-type: disc;
+
+    color: #374151;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    margin-bottom: 10px;
+
+    padding-left: 5px;
+}
+
+.service-content li::marker {
+    color: #d99a00;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   COMPLETE PROJECT
+========================================================= */
+
+.complete-project {
+    text-align: center;
+
+    padding: 90px 20px;
+
+    background: white;
+}
+
+.complete-project h2 {
+    color: #111827;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.complete-project > p {
+    color: #64748b;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+}
+
+
+/* =========================================================
+   DEVELOPMENT PROCESS
+========================================================= */
+
+.development-process {
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 20px;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+.development-process div {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.development-process strong {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffc107;
+
+    color: #111827;
+
+    font-size: 14px;
+}
+
+.development-process span {
+    color: #374151;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   SERVICE CTA
+========================================================= */
+
+.service-cta {
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background: #08131f;
+
+    color: white;
+}
+
+.service-cta h2 {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.service-cta p {
+    font-size: 17px;
+
+    margin-bottom: 30px;
+}
+
+.service-cta a {
+    display: inline-block;
+
+    background: #ffc107;
+
+    color: #111827;
+
+    text-decoration: none;
+
+    padding: 14px 28px;
+
+    border-radius: 6px;
+
+    font-weight: 700;
+}
+
+.service-cta a:hover {
+    background: #ffca2c;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   PROJECTS PAGE
+========================================================= */
+
+
+/* =========================================================
+   PROJECTS HERO
+========================================================= */
+
+.projects-hero {
+    min-height: 400px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.68),
+            rgba(0, 0, 0, 0.68)
+        ),
+        url("images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-hero-content {
+    max-width: 850px;
+}
+
+.projects-location {
+    color: #ffc107;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.projects-hero h1 {
+    color: white;
+
+    font-size: 60px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.projects-hero p:last-child {
+    color: #e5e7eb;
+
+    font-size: 19px;
+
+    max-width: 750px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   PROJECT INTRODUCTION
+========================================================= */
+
+.projects-introduction {
+    background: white;
+
+    padding: 80px 20px;
+
+    border-bottom: 1px solid #e1e5ea;
+}
+
+.projects-heading {
+    text-align: center;
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.projects-heading .section-label {
+    color: #d99a00;
+}
+
+.projects-heading h2 {
+    color: #111827;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+.projects-heading p:last-child {
+    color: #64748b;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   PROJECT SECTION
+========================================================= */
+
+.project-section {
+    background: white;
+
+    padding: 85px 0;
+
+    border-bottom: 1px solid #e1e5ea;
+}
+
+.project-section-light {
+    background: #f5f7fa;
+}
+
+
+/* =========================================================
+   PROJECT CARD
+========================================================= */
+
+.project-card {
+    max-width: 950px;
+
+    margin: auto;
+
+    display: block;
+}
+
+
+/* =========================================================
+   PROJECT CONTENT
+========================================================= */
+
+.project-content {
+    width: 100%;
+
+    max-width: 950px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   PROJECT NUMBER
+========================================================= */
+
+.project-number {
+    color: #d99a00;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   PROJECT MAIN HEADING
+========================================================= */
+
+.project-content h2 {
+    color: #111827;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   PROJECT IMAGE
+========================================================= */
+
+.project-image {
+    width: 100%;
+
+    margin: 0 0 35px 0;
+
+    position: static;
+}
+
+.project-image img {
+    display: block;
+
+    width: 100%;
+
+    height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+
+    border: 1px solid #e1e5ea;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s ease;
+}
+
+.project-image img:hover {
+    transform: scale(1.01);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.16);
+}
+
+
+/* =========================================================
+   PROJECT DESCRIPTION
+========================================================= */
+
+.project-description {
+    color: #64748b;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   PROJECT SUB HEADINGS
+========================================================= */
+
+.project-content h3 {
+    color: #d99a00;
+
+    font-size: 23px;
+
+    font-weight: 700;
+
+    margin-top: 30px;
+
+    margin-bottom: 14px;
+}
+
+
+/* =========================================================
+   PROJECT LIST
+========================================================= */
+
+.project-content ul {
+    padding-left: 28px;
+
+    margin-bottom: 15px;
+}
+
+.project-content li {
+    color: #374151;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 8px;
+}
+
+.project-content li::marker {
+    color: #d99a00;
+}
+
+
+/* =========================================================
+   PROJECT HIGHLIGHT
+========================================================= */
+
+.project-highlight {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    margin-top: 30px;
+
+    padding: 20px 22px;
+
+    background: #fff8df;
+
+    border-left: 4px solid #ffc107;
+
+    border-radius: 6px;
+}
+
+.project-highlight strong {
+    color: #b07800;
+
+    font-size: 17px;
+}
+
+.project-highlight span {
+    color: #64748b;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   CONTACT PAGE
+========================================================= */
+
+.contact-page {
+    background: #f5f7fa;
+
+    padding: 70px 20px 90px;
+}
+
+
+/* =========================================================
+   CONTACT HERO
+========================================================= */
+
+.contact-hero {
+    min-height: 350px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.68),
+            rgba(0, 0, 0, 0.68)
+        ),
+        url("images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-hero-content {
+    max-width: 800px;
+}
+
+.contact-hero-content h1 {
+    color: white;
+
+    font-size: 60px;
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+.contact-hero-content p {
+    color: #e5e7eb;
+
+    font-size: 18px;
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   CONTACT INTRODUCTION
+========================================================= */
+
+.contact-introduction {
+    background: white;
+
+    padding: 80px 0;
+
+    border-bottom: 1px solid #e1e5ea;
+}
+
+.contact-heading {
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 0 auto 50px;
+}
+
+.contact-heading h2 {
+    color: #111827;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.contact-heading p {
+    color: #64748b;
+
+    font-size: 17px;
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   CONTACT GRID
+========================================================= */
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    max-width: 950px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   CONTACT CARD
+========================================================= */
+
+.contact-card {
+    background: #f8fafc;
+
+    border: 1px solid #e1e5ea;
+
+    border-radius: 10px;
+
+    padding: 35px;
+
+    transition: 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #ffc107;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   CONTACT ICON
+========================================================= */
+
+.contact-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #fff8df;
+
+    color: #d99a00;
+
+    border-radius: 50%;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   CONTACT CARD TEXT
+========================================================= */
+
+.contact-card h3 {
+    color: #111827;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: #64748b;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   CONTACT LINKS
+========================================================= */
+
+.contact-card a {
+    display: inline-block;
+
+    color: #d99a00;
+
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    margin-top: 5px;
+}
+
+.contact-card a:hover {
+    color: #a87300;
+
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   CALL BUTTON
+========================================================= */
+
+.contact-call {
+    display: inline-block;
+
+    background: #ffc107;
+
+    color: #111827 !important;
+
+    text-decoration: none;
+
+    padding: 12px 22px;
+
+    border-radius: 6px;
+
+    margin-top: 10px;
+
+    font-size: 15px !important;
+    font-weight: 700;
+}
+
+.contact-call:hover {
+    background: #ffca2c;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   WHATSAPP BUTTON
+========================================================= */
+
+.contact-whatsapp {
+    display: inline-block;
+
+    background: #25d366;
+
+    color: white !important;
+
+    text-decoration: none;
+
+    padding: 12px 22px;
+
+    border-radius: 6px;
+
+    margin-top: 10px;
+
+    font-size: 15px !important;
+    font-weight: 700;
+}
+
+.contact-whatsapp:hover {
+    background: #1ebe5d;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   CONTACT CTA
+========================================================= */
+
+.contact-cta {
+    text-align: center;
+
+    background: #08131f;
+
+    color: white;
+
+    padding: 80px 20px;
+}
+
+.contact-cta h2 {
+    color: white;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.contact-cta p {
+    color: #e5e7eb;
+
+    font-size: 17px;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+}
+
+.contact-cta a {
+    display: inline-block;
+
+    background: #ffc107;
+
+    color: #111827;
+
+    text-decoration: none;
+
+    padding: 14px 30px;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.contact-cta a:hover {
+    background: #ffca2c;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    background: #08131f;
+
+    color: white;
+
+    padding: 45px 20px;
+}
+
+.footer-container {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.footer h3 {
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.footer p {
+    color: #aab7c4;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* =====================================================
+       NAVIGATION
+    ===================================================== */
+
+    .nav-container {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .navigation {
+        gap: 12px;
+    }
+
+    .navigation a {
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       HOME
+    ===================================================== */
+
+    .home-logo {
+        width: 180px;
+    }
+
+    .home h1 {
+        font-size: 36px;
+    }
+
+    .home h2 {
+        font-size: 23px;
+    }
+
+    .home p {
+        font-size: 17px;
+    }
+
+
+    /* =====================================================
+       PAGE HERO
+    ===================================================== */
+
+    .page-hero {
+        min-height: 280px;
+    }
+
+    .page-hero-content h1 {
+        font-size: 42px;
+    }
+
+    .page-hero-content p {
+        font-size: 16px;
+    }
+
+
+    /* =====================================================
+       ABOUT HERO
+    ===================================================== */
+
+    .about-hero {
+        min-height: 400px;
+
+        padding: 50px 20px;
+    }
+
+    .about-hero h1 {
+        font-size: 40px;
+    }
+
+    .about-hero h2 {
+        font-size: 23px;
+    }
+
+    .about-hero-content > p:last-child {
+        font-size: 16px;
+    }
+
+
+    /* =====================================================
+       ABOUT INTRODUCTION
+    ===================================================== */
+
+    .about-introduction {
+        padding: 60px 0;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .about-heading h2 {
+        font-size: 32px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+
+    /* =====================================================
+       ABOUT SERVICES
+    ===================================================== */
+
+    .about-services {
+        padding: 65px 0;
+    }
+
+    .about-section-heading h2 {
+        font-size: 32px;
+    }
+
+    .about-section-heading > p:last-child {
+        font-size: 16px;
+    }
+
+
+    /* =====================================================
+       ABOUT CARDS
+    ===================================================== */
+
+    .about-cards {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .about-card {
+        padding: 28px;
+    }
+
+    .about-card h3 {
+        font-size: 23px;
+    }
+
+    .about-card p {
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       APPROACH
+    ===================================================== */
+
+    .our-approach {
+        padding: 65px 0;
+    }
+
+    .approach-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .our-approach h2 {
+        font-size: 32px;
+    }
+
+    .approach-text p {
+        font-size: 16px;
+    }
+
+
+    /* =====================================================
+       TECHNICAL AREAS
+    ===================================================== */
+
+    .technical-areas {
+        padding: 65px 0;
+    }
+
+    .technical-list {
+        grid-template-columns: 1fr;
+    }
+
+    .technical-list > div {
+        border-right: none !important;
+
+        grid-template-columns: 45px 1fr;
+
+        padding: 25px 10px;
+    }
+
+    .technical-list strong {
+        font-size: 19px;
+    }
+
+    .technical-list p {
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       GOAL
+    ===================================================== */
+
+    .our-goal {
+        padding: 65px 20px;
+    }
+
+    .our-goal h2 {
+        font-size: 32px;
+    }
+
+    .our-goal > p:last-child {
+        font-size: 16px;
+    }
+
+
+    /* =====================================================
+       ABOUT CTA
+    ===================================================== */
+
+    .about-cta {
+        padding: 65px 20px;
+    }
+
+    .about-cta h2 {
+        font-size: 32px;
+    }
+
+    .about-cta p {
+        font-size: 16px;
+    }
+
+
+    /* =====================================================
+       SERVICES
+    ===================================================== */
+
+    .services-page {
+        padding: 40px 15px;
+    }
+
+    .service-section {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        padding: 45px 0;
+    }
+
+    .service-icon {
+        font-size: 32px;
+    }
+
+    .service-content h2 {
+        font-size: 30px;
+    }
+
+    .service-content p {
+        font-size: 15px;
+    }
+
+    .service-content ul {
+        padding-left: 25px;
+    }
+
+    .service-content li {
+        font-size: 15px;
+
+        margin-bottom: 8px;
+    }
+
+
+    /* =====================================================
+       DEVELOPMENT
+    ===================================================== */
+
+    .development-process {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 30px;
+    }
+
+    .complete-project h2 {
+        font-size: 32px;
+    }
+
+
+    /* =====================================================
+       SERVICE CTA
+    ===================================================== */
+
+    .service-cta h2 {
+        font-size: 32px;
+    }
+
+
+    /* =====================================================
+       PROJECTS
+    ===================================================== */
+
+    .projects-hero {
+        min-height: 320px;
+
+        padding: 50px 20px;
+    }
+
+    .projects-location {
+        font-size: 17px;
+    }
+
+    .projects-hero h1 {
+        font-size: 42px;
+    }
+
+    .projects-hero p:last-child {
+        font-size: 16px;
+    }
+
+
+    /* =====================================================
+       PROJECT INTRODUCTION
+    ===================================================== */
+
+    .projects-introduction {
+        padding: 60px 20px;
+    }
+
+    .projects-heading h2 {
+        font-size: 32px;
+    }
+
+    .projects-heading p:last-child {
+        font-size: 16px;
+    }
+
+
+    /* =====================================================
+       PROJECT SECTIONS
+    ===================================================== */
+
+    .project-section {
+        padding: 60px 0;
+    }
+
+    .project-card {
+        display: block;
+    }
+
+    .project-content {
+        width: 100%;
+    }
+
+
+    /* =====================================================
+       PROJECT IMAGE
+    ===================================================== */
+
+    .project-image {
+        margin-bottom: 28px;
+    }
+
+    .project-image img {
+        width: 100%;
+
+        height: 280px;
+
+        border-radius: 10px;
+    }
+
+
+    /* =====================================================
+       PROJECT HEADINGS
+    ===================================================== */
+
+    .project-number {
+        font-size: 12px;
+
+        margin-bottom: 8px;
+    }
+
+    .project-content h2 {
+        font-size: 31px;
+
+        margin-bottom: 22px;
+    }
+
+    .project-content h3 {
+        font-size: 20px;
+
+        margin-top: 26px;
+    }
+
+
+    /* =====================================================
+       PROJECT DESCRIPTION
+    ===================================================== */
+
+    .project-description {
+        font-size: 16px;
+
+        line-height: 1.75;
+    }
+
+
+    /* =====================================================
+       PROJECT LIST
+    ===================================================== */
+
+    .project-content ul {
+        padding-left: 24px;
+    }
+
+    .project-content li {
+        font-size: 15px;
+
+        line-height: 1.65;
+
+        margin-bottom: 7px;
+    }
+
+
+    /* =====================================================
+       PROJECT HIGHLIGHT
+    ===================================================== */
+
+    .project-highlight {
+        padding: 18px;
+
+        margin-top: 25px;
+    }
+
+    .project-highlight strong {
+        font-size: 16px;
+    }
+
+    .project-highlight span {
+        font-size: 14px;
+    }
+
+
+    /* =====================================================
+       CONTACT
+    ===================================================== */
+
+    .contact-page {
+        padding: 50px 15px 65px;
+    }
+
+    .contact-hero {
+        min-height: 280px;
+
+        padding: 45px 20px;
+    }
+
+    .contact-hero-content h1 {
+        font-size: 42px;
+    }
+
+    .contact-hero-content p {
+        font-size: 16px;
+    }
+
+    .contact-introduction {
+        padding: 60px 0;
+    }
+
+    .contact-heading {
+        margin-bottom: 35px;
+    }
+
+    .contact-heading h2 {
+        font-size: 32px;
+    }
+
+    .contact-heading p {
+        font-size: 16px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .contact-card {
+        padding: 28px;
+    }
+
+    .contact-card h3 {
+        font-size: 22px;
+    }
+
+    .contact-card p {
+        font-size: 15px;
+    }
+
+    .contact-cta {
+        padding: 65px 20px;
+    }
+
+    .contact-cta h2 {
+        font-size: 32px;
+    }
+
+    .contact-cta p {
+        font-size: 16px;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .footer-container {
+        flex-direction: column;
+
+        text-align: center;
+    }
+}
